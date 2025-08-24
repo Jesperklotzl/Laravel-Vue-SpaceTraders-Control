@@ -1,0 +1,23 @@
+name: "Milestone 2 – Authentication & API Integration"
+description: "Handle login using SpaceTraders API token"
+title: "[Milestone 2] Authentication & API Integration"
+labels: ["milestone-2", "auth", "api"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 Goal
+        Implement authentication using SpaceTraders API token stored in `.env`.
+
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Implement login flow and test API connectivity
+      options:
+        - label: Create `SpaceTradersApi` service for handling API requests
+        - label: Store API key securely in `.env`
+        - label: Add config entry in `config/services.php`
+        - label: Build controller to fetch agent info (test auth works)
+        - label: Display success/error message if token is invalid

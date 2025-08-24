@@ -1,0 +1,54 @@
+name: "Laravel + Vue SpaceTraders Control"
+description: "Learn Laravel 12 + Vue 3 by building a SpaceTraders control app: setup → fleet → dashboard → automation."
+public: true
+
+columns:
+  - name: 📥 Backlog
+    description: "Ideas and tasks not started yet"
+  - name: 🚧 In Progress
+    description: "Tasks currently being worked on"
+  - name: ✅ Done
+    description: "Completed tasks"
+
+milestones:
+  - title: "Milestone 1: Setup Laravel & Vue"
+    description: "Initialize Laravel 12 + Vue 3 + TailwindCSS project"
+    due_on: 2025-12-31
+  - title: "Milestone 2: Authentication & API Integration"
+    description: "Handle SpaceTraders API token login"
+    due_on: 2025-12-31
+  - title: "Milestone 3: Fleet Manual Control"
+    description: "Control ships via Inertia/Vue frontend"
+    due_on: 2025-12-31
+  - title: "Milestone 4: Dashboard"
+    description: "Show agent stats and fleet overview in a dashboard"
+    due_on: 2025-12-31
+  - title: "Milestone 5: Automation"
+    description: "Automate ship operations with queues/jobs"
+    due_on: 2025-12-31
+
+issues:
+  - title: "[Setup] Initialize Laravel + Vue Project"
+    milestone: "Milestone 1: Setup Laravel & Vue"
+    labels: ["milestone-1", "setup", "vue"]
+    template: "1-setup-laravel.yml"
+
+  - title: "[Authentication] API Token Login"
+    milestone: "Milestone 2: Authentication & API Integration"
+    labels: ["milestone-2", "auth", "api"]
+    template: "2-authentication.yml"
+
+  - title: "[Fleet] Manual Ship Control"
+    milestone: "Milestone 3: Fleet Manual Control"
+    labels: ["milestone-3", "fleet", "vue"]
+    template: "3-fleet-control.yml"
+
+  - title: "[Dashboard] Vue Dashboard"
+    milestone: "Milestone 4: Dashboard"
+    labels: ["milestone-4", "dashboard", "vue"]
+    template: "4-dashboard.yml"
+
+  - title: "[Automation] Background Jobs & Queue"
+    milestone: "Milestone 5: Automation"
+    labels: ["milestone-5", "automation", "queues"]
+    template: "5-automation.yml"

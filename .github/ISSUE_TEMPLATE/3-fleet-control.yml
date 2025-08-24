@@ -1,0 +1,24 @@
+name: "Milestone 3 – Fleet Control (Manual)"
+description: "List and manually control ships from the Vue frontend"
+title: "[Milestone 3] Fleet Control"
+labels: ["milestone-3", "fleet", "vue"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 Goal
+        Allow manual control of fleet ships (dock, orbit, navigate, extract, sell, refuel).
+
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Create UI + backend routes for manual fleet management
+      options:
+        - label: Create `ShipController` with index and action methods
+        - label: Define routes for ship actions (`dock`, `orbit`, `navigate`, `extract`, `sell`, `refuel`)
+        - label: Build Vue page `Ships/Index.vue` with fleet table
+        - label: Add action buttons for each ship
+        - label: Handle flash success/error messages in Vue
+        - label: Test commands against SpaceTraders API

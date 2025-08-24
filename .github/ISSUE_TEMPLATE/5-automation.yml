@@ -1,0 +1,23 @@
+name: "Milestone 5 – Automation (Future)"
+description: "Automate fleet behavior (mining, trading, navigation)"
+title: "[Milestone 5] Automation"
+labels: ["milestone-5", "automation", "future"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 Goal
+        Automate fleet operations such as resource extraction, selling, and refueling.
+
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Automation ideas for future implementation
+      options:
+        - label: Create scheduler to run background tasks
+        - label: Add queued jobs for ship automation (mining, selling, refueling)
+        - label: Store automation state in database
+        - label: Add dashboard controls to enable/disable automation
+        - label: Test with one ship before scaling to multiple

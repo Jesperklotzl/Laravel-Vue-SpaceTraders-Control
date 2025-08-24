@@ -1,0 +1,24 @@
+name: "Milestone 4 – Dashboard"
+description: "Show stats and fleet overview on a dashboard"
+title: "[Milestone 4] Dashboard"
+labels: ["milestone-4", "dashboard", "vue"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 Goal
+        Display agent stats (credits, faction, HQ) and fleet overview in a dashboard.
+
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Build dashboard page with agent + fleet info
+      options:
+        - label: Create `DashboardController` to fetch agent + fleet data
+        - label: Build Vue page `Dashboard.vue`
+        - label: Display agent credits, faction, headquarters
+        - label: Show fleet overview (status, cargo)
+        - label: Add Tailwind styling for clean layout
+        - label: Link to fleet control page
