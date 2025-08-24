@@ -1,0 +1,23 @@
+name: "Milestone 1 – Setup Laravel & Vue"
+description: "Initialize Laravel 12 with Vue 3 + Inertia.js + Tailwind"
+title: "[Milestone 1] Setup Laravel & Vue"
+labels: ["milestone-1", "setup"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 Goal
+        Setup the development environment for Laravel 12 + Inertia.js + Vue 3 + Tailwind.
+
+  - type: checkboxes
+    id: tasks
+    attributes:
+      label: Tasks
+      description: Complete these steps in order
+      options:
+        - label: Install Laravel 12 project via Composer
+        - label: Install Inertia.js + Vue 3
+        - label: Install TailwindCSS
+        - label: Setup `.env` file and database
+        - label: Commit and push initial setup to GitHub
