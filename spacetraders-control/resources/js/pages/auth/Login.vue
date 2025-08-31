@@ -16,8 +16,7 @@ defineProps<{
 </script>
 
 <template>
-    <AuthBase title="Log in to your account" description="Enter your email and password below to log in">
-        <Head title="Log in" />
+    <AuthBase title="Please login to control fleet">
 
         <div v-if="status" class="mb-4 text-sm font-medium text-center text-green-600">
             {{ status }}
@@ -72,10 +71,6 @@ defineProps<{
                 </Button>
             </div>
 
-            <div class="text-sm text-center text-muted-foreground">
-                Don't have an account?
-                <TextLink :href="route('register')" :tabindex="5">Sign up</TextLink>
-            </div>
         </Form>
     </AuthBase>
 </template>
