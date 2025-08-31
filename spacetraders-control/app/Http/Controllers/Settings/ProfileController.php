@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Inertia\Inertia;
 use Inertia\Response;
+use function Psy\debug;
 
 class ProfileController extends Controller
 {
@@ -21,6 +22,7 @@ class ProfileController extends Controller
         return Inertia::render('settings/Profile', [
             'mustVerifyEmail' => $request->user() instanceof MustVerifyEmail,
             'status' => $request->session()->get('status'),
+            'spacetraders_token' => $request->session()->get('spacetraders_token'),
         ]);
     }
 

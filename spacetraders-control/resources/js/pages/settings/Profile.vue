@@ -85,6 +85,19 @@ const user = page.props.auth.user;
                         </div>
                     </div>
 
+                    <div class="grid gap-2">
+                        <Label for="name">Spacetraders Token</Label>
+                        <Input
+                            id="spacetraders_token"
+                            class="mt-1 block w-full"
+                            name="spacetraders_token"
+                            :default-value="user.spacetraders_token"
+                            required
+                            placeholder="API Token"
+                        />
+                        <InputError class="mt-2" :message="errors.name" />
+                    </div>
+
                     <div class="flex items-center gap-4">
                         <Button :disabled="processing">Save</Button>
 
